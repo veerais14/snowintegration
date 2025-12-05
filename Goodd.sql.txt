@@ -1,0 +1,4 @@
+create or replace TABLE CAN_EARNING_CODE_TABLE (
+              ADP_CODE_CAN VARCHAR(3),
+              MSA_CODE_CAN VARCHAR(2)
+);

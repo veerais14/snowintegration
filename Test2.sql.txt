@@ -1,0 +1,9 @@
+create or replace TABLE DIST_ROUTE_ALLOCATION (
+              RECORD_TYPE VARCHAR(1),
+              TICKET_NUMBER VARCHAR(20),
+              BACK_TIME_DATE VARCHAR(100),
+              REGION_CODE VARCHAR(1),
+              STATE_CODE VARCHAR(2),
+              
+              
+);
