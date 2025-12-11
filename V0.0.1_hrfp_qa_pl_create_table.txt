@@ -1,0 +1,28 @@
+CREATE OR REPLACE TABLE HRFP_QA_PL.EMPLOYEE (
+Emp_id INTEGER,
+Name STRING ,
+POSTION STRING
+);
+CREATE OR REPLACE TABLE HRFP_QA_RL.CUSTOMERS (
+Cust_id INTEGER,
+Name STRING 
+);
+
+
+create or replace view SNOWFLAKE_LEARNING_DB.HRFP_QA_PL.CATEGORY_PRODUCTS_BAS(
+	EMP_ID,
+	NAME,
+	POSTION
+) as
+select
+  Emp_id,
+  Name,
+  POSTION
+from EMPLOYEE;
+
+create or replace view HRFP_QA_PL.category_products_bas as
+select
+  Emp_id,
+  Name,
+  POSTION
+from EMPLOYEE;
